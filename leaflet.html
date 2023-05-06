@@ -3,8 +3,8 @@
 <head>
   <title>lemko-map</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <link rel="stylesheet" href="http://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
-  <script src="http://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="https://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
+  <script src="https://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
   <script>
       var layer;
     function init() {
@@ -12,7 +12,7 @@
             new L.LatLng(48.731254, 20.349401),
             new L.LatLng(49.785744, 23.056453));
         var map = L.map('map').fitBounds(bounds);
-        L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
         var options = {
             minZoom: 7,
             maxZoom: 10,
